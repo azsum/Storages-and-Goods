@@ -1,0 +1,14 @@
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\bin\Debug\BLL.dll.config
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\bin\Debug\BLL.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\bin\Debug\BLL.pdb
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\bin\Debug\DAL.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\bin\Debug\DML.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\bin\Debug\EntityFramework.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\bin\Debug\DAL.pdb
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\bin\Debug\DML.pdb
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\bin\Debug\EntityFramework.xml
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\obj\Debug\BLL.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\BLL\obj\Debug\BLL.pdb

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StorehouseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="GoodOperationType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="TypeOfOperation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="GoodsStatus" Relationship="Self.FK_GoodsStatus_GoodOperationType" FromRole="GoodOperationType" ToRole="GoodsStatus" />
+  </EntityType>
+  <EntityType Name="Goods">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TotalAmount" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="StorageID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Storages" Relationship="Self.FK_Goods_Storages" FromRole="Goods" ToRole="Storages" />
+    <NavigationProperty Name="GoodsStatus" Relationship="Self.FK_GoodsStatus_Goods" FromRole="Goods" ToRole="GoodsStatus" />
+  </EntityType>
+  <EntityType Name="GoodsStatus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StatusDataFrom" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="GoodAmount" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="GoodOperationID" Type="Int32" Nullable="false" />
+    <Property Name="GoodID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="GoodOperationType" Relationship="Self.FK_GoodsStatus_GoodOperationType" FromRole="GoodsStatus" ToRole="GoodOperationType" />
+    <NavigationProperty Name="Goods" Relationship="Self.FK_GoodsStatus_Goods" FromRole="GoodsStatus" ToRole="Goods" />
+  </EntityType>
+  <EntityType Name="Storages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ImagePath" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Goods" Relationship="Self.FK_Goods_Storages" FromRole="Storages" ToRole="Goods" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_Storages_Users" FromRole="Storages" ToRole="Users" />
+    <Property Name="Capacity" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Storages" Relationship="Self.FK_Storages_Users" FromRole="Users" ToRole="Storages" />
+  </EntityType>
+  <Association Name="FK_GoodsStatus_GoodOperationType">
+    <End Role="GoodOperationType" Type="Self.GoodOperationType" Multiplicity="1" />
+    <End Role="GoodsStatus" Type="Self.GoodsStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GoodOperationType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GoodsStatus">
+        <PropertyRef Name="GoodOperationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Goods_Storages">
+    <End Role="Storages" Type="Self.Storages" Multiplicity="1" />
+    <End Role="Goods" Type="Self.Goods" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Storages">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Goods">
+        <PropertyRef Name="StorageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GoodsStatus_Goods">
+    <End Role="Goods" Type="Self.Goods" Multiplicity="1" />
+    <End Role="GoodsStatus" Type="Self.GoodsStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Goods">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GoodsStatus">
+        <PropertyRef Name="GoodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Storages_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Storages" Type="Self.Storages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Storages">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="StorehouseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GoodOperationType" EntityType="Self.GoodOperationType" />
+    <EntitySet Name="Goods" EntityType="Self.Goods" />
+    <EntitySet Name="GoodsStatus" EntityType="Self.GoodsStatus" />
+    <EntitySet Name="Storages" EntityType="Self.Storages" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK_GoodsStatus_GoodOperationType" Association="Self.FK_GoodsStatus_GoodOperationType">
+      <End Role="GoodOperationType" EntitySet="GoodOperationType" />
+      <End Role="GoodsStatus" EntitySet="GoodsStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Goods_Storages" Association="Self.FK_Goods_Storages">
+      <End Role="Storages" EntitySet="Storages" />
+      <End Role="Goods" EntitySet="Goods" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GoodsStatus_Goods" Association="Self.FK_GoodsStatus_Goods">
+      <End Role="Goods" EntitySet="Goods" />
+      <End Role="GoodsStatus" EntitySet="GoodsStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Storages_Users" Association="Self.FK_Storages_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Storages" EntitySet="Storages" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

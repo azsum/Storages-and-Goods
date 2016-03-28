@@ -1,0 +1,48 @@
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\DAL\bin\Debug\DAL.dll.config
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\DAL\bin\Debug\DAL.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\DAL\bin\Debug\DAL.pdb
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\DAL\bin\Debug\DML.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\DAL\bin\Debug\EntityFramework.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\DAL\bin\Debug\DML.pdb
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\DAL\bin\Debug\EntityFramework.xml
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\DAL\obj\Debug\DAL.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\DAL\obj\Debug\DAL.pdb
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\Storehouse\DAL\bin\Debug\DAL.dll.config
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\Storehouse\DAL\bin\Debug\DAL.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\Storehouse\DAL\bin\Debug\DAL.pdb
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\Storehouse\DAL\bin\Debug\DML.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\Storehouse\DAL\bin\Debug\EntityFramework.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\Storehouse\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\Storehouse\DAL\bin\Debug\DML.pdb
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\Storehouse\DAL\bin\Debug\EntityFramework.xml
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\Storehouse\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\Storehouse\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\Storehouse\DAL\obj\Debug\DAL.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\Storehouse\Storehouse\Storehouse\DAL\obj\Debug\DAL.pdb
+C:\Users\az\Documents\Visual Studio 2015\Projects\StoragesAndGoods\DAL\bin\Debug\DAL.dll.config
+C:\Users\az\Documents\Visual Studio 2015\Projects\StoragesAndGoods\DAL\bin\Debug\DAL.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\StoragesAndGoods\DAL\bin\Debug\DAL.pdb
+C:\Users\az\Documents\Visual Studio 2015\Projects\StoragesAndGoods\DAL\bin\Debug\DML.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\StoragesAndGoods\DAL\bin\Debug\EntityFramework.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\StoragesAndGoods\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\StoragesAndGoods\DAL\bin\Debug\DML.pdb
+C:\Users\az\Documents\Visual Studio 2015\Projects\StoragesAndGoods\DAL\bin\Debug\EntityFramework.xml
+C:\Users\az\Documents\Visual Studio 2015\Projects\StoragesAndGoods\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\az\Documents\Visual Studio 2015\Projects\StoragesAndGoods\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\az\Documents\Visual Studio 2015\Projects\StoragesAndGoods\DAL\obj\Debug\DAL.dll
+C:\Users\az\Documents\Visual Studio 2015\Projects\StoragesAndGoods\DAL\obj\Debug\DAL.pdb
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Debug\DAL.dll.config
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Debug\DAL.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Debug\DAL.pdb
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Debug\DML.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Debug\EntityFramework.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Debug\DML.pdb
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Debug\EntityFramework.xml
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\obj\Debug\DAL.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\obj\Debug\DAL.pdb

@@ -1,0 +1,10 @@
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DML\bin\Debug\DML.dll.config
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DML\bin\Debug\DML.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DML\bin\Debug\DML.pdb
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DML\bin\Debug\EntityFramework.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DML\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DML\bin\Debug\EntityFramework.xml
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DML\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DML\obj\Debug\DML.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DML\obj\Debug\DML.pdb
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DML\obj\Debug\DML.csprojResolveAssemblyReference.cache

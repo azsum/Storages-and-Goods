@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="StorehouseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="GoodOperationType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="TypeOfOperation" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Goods">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="TotalAmount" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="StorageID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GoodsStatus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StatusDataFrom" Type="datetime" Nullable="false" />
+    <Property Name="GoodAmount" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="GoodOperationID" Type="int" Nullable="false" />
+    <Property Name="GoodID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Storages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ImagePath" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="Capacity" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Username" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Goods_Storages1">
+    <End Role="Storages" Type="Self.Storages" Multiplicity="1" />
+    <End Role="Goods" Type="Self.Goods" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Storages">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Goods">
+        <PropertyRef Name="StorageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GoodsStatus_GoodOperationType">
+    <End Role="GoodOperationType" Type="Self.GoodOperationType" Multiplicity="1" />
+    <End Role="GoodsStatus" Type="Self.GoodsStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GoodOperationType">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GoodsStatus">
+        <PropertyRef Name="GoodOperationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GoodsStatus_Goods">
+    <End Role="Goods" Type="Self.Goods" Multiplicity="1" />
+    <End Role="GoodsStatus" Type="Self.GoodsStatus" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Goods">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="GoodsStatus">
+        <PropertyRef Name="GoodID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Storages_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="1" />
+    <End Role="Storages" Type="Self.Storages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Storages">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="StorehouseModelStoreContainer">
+    <EntitySet Name="GoodOperationType" EntityType="Self.GoodOperationType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Goods" EntityType="Self.Goods" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GoodsStatus" EntityType="Self.GoodsStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Storages" EntityType="Self.Storages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Goods_Storages1" Association="Self.FK_Goods_Storages1">
+      <End Role="Storages" EntitySet="Storages" />
+      <End Role="Goods" EntitySet="Goods" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GoodsStatus_GoodOperationType" Association="Self.FK_GoodsStatus_GoodOperationType">
+      <End Role="GoodOperationType" EntitySet="GoodOperationType" />
+      <End Role="GoodsStatus" EntitySet="GoodsStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GoodsStatus_Goods" Association="Self.FK_GoodsStatus_Goods">
+      <End Role="Goods" EntitySet="Goods" />
+      <End Role="GoodsStatus" EntitySet="GoodsStatus" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Storages_Users" Association="Self.FK_Storages_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Storages" EntitySet="Storages" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

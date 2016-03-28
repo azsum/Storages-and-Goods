@@ -1,0 +1,24 @@
+C:\Users\az\documents\visual studio 2015\Projects\StoragesAndGoods\DAL\bin\Release\DAL.dll.config
+C:\Users\az\documents\visual studio 2015\Projects\StoragesAndGoods\DAL\bin\Release\DAL.dll
+C:\Users\az\documents\visual studio 2015\Projects\StoragesAndGoods\DAL\bin\Release\DAL.pdb
+C:\Users\az\documents\visual studio 2015\Projects\StoragesAndGoods\DAL\bin\Release\DML.dll
+C:\Users\az\documents\visual studio 2015\Projects\StoragesAndGoods\DAL\bin\Release\EntityFramework.dll
+C:\Users\az\documents\visual studio 2015\Projects\StoragesAndGoods\DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\az\documents\visual studio 2015\Projects\StoragesAndGoods\DAL\bin\Release\DML.pdb
+C:\Users\az\documents\visual studio 2015\Projects\StoragesAndGoods\DAL\bin\Release\EntityFramework.xml
+C:\Users\az\documents\visual studio 2015\Projects\StoragesAndGoods\DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\az\documents\visual studio 2015\Projects\StoragesAndGoods\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+C:\Users\az\documents\visual studio 2015\Projects\StoragesAndGoods\DAL\obj\Release\DAL.dll
+C:\Users\az\documents\visual studio 2015\Projects\StoragesAndGoods\DAL\obj\Release\DAL.pdb
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Release\DAL.dll.config
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Release\DAL.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Release\DAL.pdb
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Release\DML.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Release\EntityFramework.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Release\DML.pdb
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Release\EntityFramework.xml
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\obj\Release\DAL.dll
+C:\Users\az\Documents\GitHub\Storages-ASP-Web-Forms-\StoragesAndGoods\DAL\obj\Release\DAL.pdb
